@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5B9BD5"
+    tools:context=".PauseMenuActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pauseandgameoverbackground"/>
+
+    <ImageView
+        android:id="@+id/pauseMenuTitleImageView"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/titlebarboldtrans" />
+
+    <TextView
+        android:id="@+id/pausedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pauseMenuTitleImageView"
+        android:gravity="center"
+        android:text="@string/pause_menu_paused"
+        android:layout_marginTop="25dp"
+        android:textColor="#DEEBF7"
+        android:textSize="40sp"/>
+    <TextView
+        android:id="@+id/pausedScoreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pausedTextView"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:text="745"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="90sp"
+        />
+
+        <ImageButton
+            android:id="@+id/pauseMenuResumeButton"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:text="@string/pause_menu_resume"
+            android:textColor="#FFF"
+            android:textSize="35sp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/endresume"
+            android:layout_below="@id/pausedTextView"
+            android:layout_marginTop="175dp"/>
+
+        <ImageButton
+            android:id="@+id/pauseMenuRestartButton"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/pauseMenuResumeButton"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/endrestart"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"/>
+
+        <ImageButton
+            android:id="@+id/pauseMenuMainMenuButton"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/pauseMenuResumeButton"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/endmainmenu"
+            android:layout_marginTop="25dp" />
+
+</RelativeLayout>

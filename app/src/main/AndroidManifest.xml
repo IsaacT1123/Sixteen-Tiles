@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="isaac.sixteentilesgame">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:largestWidthLimitDp="480"
+        android:requiresSmallestWidthDp="320"></supports-screens>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sixteentileslogo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <!--<meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        -->
+
+        <activity
+            android:name=".ArcadeModeActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/title_activity_arcade_mode"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".ClassicModeActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="ClassicModeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".HelpActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/title_activity_help"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ZenModeActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/title_activity_zen_mode"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MenuActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".PauseMenuActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/title_activity_pause_menu"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".GameOverActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/title_activity_game_over"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            >
+
+        </activity>
+        <activity
+            android:name=".SplashTwo"
+            android:label="@string/title_activity_splash_Two"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"></activity>
+
+
+    </application>
+
+</manifest>

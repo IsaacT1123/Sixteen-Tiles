@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5B9BD5"
+    tools:context=".MenuActivity">
+
+
+    <ImageView
+        android:id="@+id/titleImageView"
+        android:layout_width="305dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/titlebarboldtrans"/>
+
+    <ImageButton
+        android:id="@+id/classicModeButton"
+        android:layout_width="147dp"
+        android:layout_height="82dp"
+        android:layout_below="@id/titleImageView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/menuclassic"
+        android:layout_marginTop="5dp"/>
+
+    <ImageButton
+        android:id="@+id/zenModeButton"
+        android:layout_width="147dp"
+        android:layout_height="82dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/titleImageView"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/menuzen"
+        android:layout_marginTop="113dp"/>
+
+    <ImageButton
+        android:id="@+id/arcadeModeButton"
+        android:layout_width="147dp"
+        android:layout_height="82dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/titleImageView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="113dp"
+        android:src="@drawable/menuarcade"
+        />
+
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="65.5dp"
+        android:layout_height="65.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/menusettings"
+        />
+
+    <ImageButton
+        android:id="@+id/shareButton"
+        android:layout_width="65.5dp"
+        android:layout_height="65.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="102dp"
+        android:src="@drawable/menushare"/>
+
+    <ImageButton
+        android:id="@+id/leaderBoardButton"
+        android:layout_width="65.5dp"
+        android:layout_height="65.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="102dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/menucomingsoonleaderboard"/>
+
+
+    <ImageButton
+        android:id="@+id/howToPlayButton"
+        android:layout_width="65.5dp"
+        android:layout_height="65.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/menuhelp"/>
+
+
+</RelativeLayout>

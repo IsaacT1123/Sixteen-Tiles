@@ -1,0 +1,6 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+<dimen name = "grid_button_sid_length_sw720dp">135dp</dimen>
+    <dimen name="grid_margin_sw720dp">6dp</dimen>
+
+</resources>

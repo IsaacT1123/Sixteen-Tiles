@@ -1,0 +1,176 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".SettingsActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:background="#5B9BD5">
+        <TextView
+            android:id="@+id/settingsTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="Settings"
+            android:textColor="#FFF"
+            android:textSize="50dp"
+            android:contentDescription="Settings"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <!--
+        <ImageView
+            android:id="@+id/titleImageView"
+            android:layout_width="210dp"
+            android:layout_height="75dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="16 Tiles"
+            android:src="@drawable/titlebarboldtrans" />-->
+        <ImageButton
+            android:id="@+id/inGameMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:background="#5B9BD5"
+            android:src="@drawable/menu2"
+            android:contentDescription="Main Menu" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/vibTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:text="Vibration"
+        android:textColor="#5B9BD5"
+        android:textSize="40dp" />
+
+    <ImageButton
+        android:id="@+id/vibButtonOn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/vibTextView"
+        android:layout_marginLeft="105dp"
+        android:layout_alignTop="@id/vibTextView"
+
+        android:background="#5B9BD5"
+        android:src="@drawable/checked"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/soundTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="185dp"
+        android:layout_alignLeft="@id/vibTextView"
+        android:text="SFX"
+        android:textColor="#5B9BD5"
+        android:textSize="40dp" />
+
+    <ImageButton
+        android:id="@+id/soundButtonOn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/soundTextView"
+        android:layout_toRightOf="@id/soundTextView"
+        android:layout_alignLeft="@id/vibButtonOn"
+        android:background="#5B9BD5"
+        android:src="@drawable/checked"
+        android:visibility="visible" />
+    <TextView
+        android:id="@+id/devTxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developers"
+        android:textSize="35dp"
+        android:textColor="#5B9BD5"
+        android:layout_marginTop="270dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/devTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Isaac Thomas    Sujit Hiremath"
+        android:textSize="25dp"
+        android:textColor="#5B9BD5"
+        android:layout_marginTop="320dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/devTxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ninad Mahajan   Ian Paul"
+        android:textSize="25dp"
+        android:textColor="#5B9BD5"
+        android:layout_marginTop="360dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/devTxt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amari McKoy   Billy Young"
+        android:textSize="25dp"
+        android:textColor="#5B9BD5"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/soundTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sound"
+        android:textSize="35dp"
+        android:textColor="#5B9BD5"
+        android:layout_marginTop="460dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/soundTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sound Jay"
+        android:textSize="25dp"
+        android:textColor="#5B9BD5"
+        android:layout_marginTop="510dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!--
+        <TextView
+            android:id="@+id/musicTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="270dp"
+            android:text="Music"
+            android:layout_alignLeft="@id/vibTextView"
+            android:textColor="#5B9BD5"
+            android:textSize="45dp" />
+
+        <ImageButton
+            android:id="@+id/musicButtonOn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@id/musicTextView"
+            android:layout_toRightOf="@id/musicTextView"
+            android:layout_alignLeft="@id/vibButtonOn"
+            android:background="#5B9BD5"
+            android:src="@drawable/checked"
+            android:visibility="visible" />-->
+
+
+
+</RelativeLayout>

@@ -1,0 +1,274 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".ArcadeModeActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="#5B9BD5">
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#5B9BD5">
+
+            <ImageButton
+                android:id="@+id/inGameMenuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:background="#5B9BD5"
+                android:src="@drawable/menu2"
+                android:contentDescription="Main Menu" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp">
+
+            <ImageButton
+                android:id="@+id/pauseButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#5B9BD5"
+                android:contentDescription="pause"
+                android:src="@drawable/pause"
+                android:visibility="visible" />
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/scoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/frameLayout"
+        android:layout_alignEnd="@+id/grid"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginTop="50dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#5B9BD5"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp">
+
+        <ImageView
+            android:id="@+id/tileToTapImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/tileinactive" />
+
+        <TextView
+            android:id="@+id/pregameTimerTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text=""
+            android:textSize="35sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/highScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/scoreTextView"
+        android:layout_marginTop="90dp"
+        android:text="@string/high_score"
+        android:textColor="#FFC000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/livesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/scoreTextView"
+        android:layout_below="@id/frameLayout"
+        android:layout_alignLeft="@id/grid"
+        android:textColor="#5B9BD5"
+        android:text="Lives: 4"
+        android:textSize="30sp" />
+
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scoreTextView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:columnCount="4"
+        android:rowCount="4">
+
+        <ImageButton
+            android:id="@+id/button0"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+
+        <ImageButton
+            android:id="@+id/button5"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+
+        <ImageButton
+            android:id="@+id/button6"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+
+        <ImageButton
+            android:id="@+id/button7"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+
+        <ImageButton
+            android:id="@+id/button8"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+
+        <ImageButton
+            android:id="@+id/button9"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+
+        <ImageButton
+            android:id="@+id/button10"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+
+        <ImageButton
+            android:id="@+id/button11"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+
+        <ImageButton
+            android:id="@+id/button12"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+
+        <ImageButton
+            android:id="@+id/button13"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+
+        <ImageButton
+            android:id="@+id/button14"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+
+        <ImageButton
+            android:id="@+id/button15"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="2dp"
+            android:contentDescription="colored grid cell"
+            android:src="@drawable/tileinactive" />
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/titleImageView"
+        android:layout_width="210dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="Nine Hundred Tiles"
+        android:src="@drawable/titlebarboldtrans" />
+    <!--
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="YOUR_AD_UNIT_ID"
+        ads:adSize="BANNER"
+
+        />
+        -->
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">16 Tiles</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">16 Tiles</string>
+    <string name="high_score">HIGH SCORE:</string>
+    <string name="new_game">New Game</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_arcade_mode">ArcadeModeActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_math_mode">MathModeActivity</string>
+    <string name="title_activity_challenge_mode">ChallengeModeActivity</string>
+    <string name="title_activity_zen_mode">ZenModeActivity</string>
+    <string name="menu_classic_mode">Classic Mode</string>
+    <string name="menu_arcade_mode">Arcade Mode</string>
+    <string name="menu_zen_mode">Zen Mode</string>
+    <string name="menu_how_to_play">How To Play</string>
+    <string name="menu_share">Share...</string>
+    <string name="title_activity_pause_menu">PauseMenuActivity</string>
+    <string name="pause_menu_paused">PAUSED</string>
+    <string name="pause_menu_resume">Resume</string>
+    <string name="pause_menu_restart">Restart</string>
+    <string name="pause_menu_main_menu">Menu</string>
+    <string name="title_activity_game_over">GameOverActivity</string>
+    <string name="game_over">GAME OVER</string>
+    <string name="your_score">Score:</string>
+    <string name="play_again">Play Again</string>
+    <string name="menu">Menu</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="title_activity_splash_Two">SplashTwo</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="lets_play">Lets Play!</string>
+
+</resources>
